@@ -492,8 +492,8 @@
     <div class="money-rain" id="moneyRain"></div>
 
     <div class="container">
-        <div class="main-text" id="mainText">💰 ДАЙТЕ ДЕНЕГ 💰</div>
-        <div class="subtitle">Оф��циальный сайт по сбору денег на мечту</div>
+        <div class="main-text" id="mainText">PROJECT-PITOMNIK</div>
+        <div class="subtitle">Официальный сайт по "сбору денег" на питомник</div>
 
         <div class="btn-container">
             <button class="money-btn give" onclick="giveMoney()">💵 Дать денег</button>
@@ -531,30 +531,30 @@
         </div>
 
         <div class="urgency">
-            ⚠️ СРОЧНО! Кот голодный, холодильник пустой, интернет заканчивается!
+            ⚠️ СРОЧНО! Кошка голодна, холодильник пустой, интернет заканчивается!
         </div>
 
         <div class="reasons">
-            <h2>📋 Зачем мне деньги:</h2>
+            <h2>📋 Зачем нам деньги:</h2>
             <div class="reason-card">
                 <div class="reason-emoji">🍕</div>
-                <div class="reason-text">Хочу пиццу. Нет, две пиццы. Ладно, три. С ананасами. Шучу, без ананасов, я же не монстр.</div>
+                <div class="reason-text">Хотим пиццу. Нет, две пиццы</div>
             </div>
             <div class="reason-card">
                 <div class="reason-emoji">🐱</div>
-                <div class="reason-text">Кот требует элитный корм. Обычный уже не ест — смотрит с презрением и уходит.</div>
+                <div class="reason-text">Кошка режиссёра требует элитный корм. Обычный уже не ест — смотрит с презрением (впрочем, как обычно) и уходит.</div>
             </div>
             <div class="reason-card">
                 <div class="reason-emoji">💡</div>
-                <div class="reason-text">У меня гениальная бизнес-идея! Какая? Дайте денег — расскажу.</div>
+                <div class="reason-text">У продюсера гениальная бизнес-идея! Какая? Дайте денег — расскажет</div>
             </div>
             <div class="reason-card">
                 <div class="reason-emoji">🧦</div>
-                <div class="reason-text">Нужны новые носки. Старые уже стоят сами. В прямом смысле.</div>
+                <div class="reason-text">Нужны новые арты. Старые уже достали</div>
             </div>
             <div class="reason-card">
                 <div class="reason-emoji">🌍</div>
-                <div class="reason-text">Хочу спасти мир. Но сначала надо покушать. Сытый программист — добрый программист.</div>
+                <div class="reason-text">Хотим спасти мир. Но сначала хотим денег.</div>
             </div>
             <div class="reason-card">
                 <div class="reason-emoji">🎮</div>
@@ -572,12 +572,12 @@
                 <span>💰 ДАЙТЕ ДЕНЕГ 💰</span>
                 <span>💎 ПОЖАЛУЙСТА 💎</span>
                 <span>🙏 ОЧЕНЬ НАДО 🙏</span>
-                <span>💸 ВЕРНУ КОГДА-НИБУДЬ 💸</span>
+                <span>💸 ВЕРНЁМ КОГДА-НИБУДЬ 💸</span>
                 <span>🤑 МОЖЕТ БЫТЬ 🤑</span>
                 <span>💰 ДАЙТЕ ДЕНЕГ 💰</span>
                 <span>💎 ПОЖАЛУЙСТА 💎</span>
                 <span>🙏 ОЧЕНЬ НАДО 🙏</span>
-                <span>💸 ВЕРНУ КОГДА-НИБУДЬ 💸</span>
+                <span>💸 ВЕРНЁМ КОГДА-НИБУДЬ 💸</span>
                 <span>🤑 МОЖЕТ БЫТЬ 🤑</span>
             </div>
         </div>
@@ -743,21 +743,6 @@
 
             if (catClicks >= catMessages.length) catClicks = 0;
         }
-
-        // Konami-style: title changes
-        const titles = [
-            '💰 ДАЙТЕ ДЕНЕГ 💰',
-            '💸 НУ ПОЖАААААЛУЙСТА 💸',
-            '😭 Я ЖЕ ХОРОШИЙ 😭',
-            '🙏 ЛАДНО, ХОТЯ БЫ РУБЛЬ 🙏',
-            '💎 ИЛИ ДВА 💎',
-        ];
-        let titleIndex = 0;
-
-        setInterval(() => {
-            titleIndex = (titleIndex + 1) % titles.length;
-            document.getElementById('mainText').textContent = titles[titleIndex];
-        }, 5000);
 
         // Console easter egg
         console.log('%c💰 ДАЙТЕ ДЕНЕГ 💰', 'font-size: 40px; color: gold; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);');
